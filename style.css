@@ -1,0 +1,209 @@
+*/* {
+    box-sizing: border-box;
+}*/
+
+body {margin: 0 0;
+line-height: 1.5;
+font-size: 18px;
+font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body ul li {list-style-type: none; padding-left:0;}
+
+.clear {clear:both;}
+
+a, a.link, a.visited {color:#84609e; font-weight: 600;}
+
+h1 {
+font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2,
+.h2 { font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #a8c5b6;
+}
+
+h3 {
+    font-weight:600;
+    font-size: 20px;
+}
+
+p.date {
+    color: #a5a5a5; 
+    margin-top: -17px;
+}
+
+p {margin: 8px 0 17px 0;}
+
+button {
+    font-size: 18px;
+    padding: 10px 10px;
+    background-color: #fda146;
+    border-radius: 5px;
+    border: none;
+}
+
+button a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: 600; 
+    padding: 10px 10px;
+}
+
+button a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+button:hover {background-color: #db9147;}
+
+/*  HLAVIČKA */
+
+header {
+    text-align: center;
+    padding-top: 150px;
+    height: 350px;
+    background-image: url("images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+header ul li {
+    display: inline; 
+    padding: 15px 20px;
+}
+
+.contact {
+    font-size: 20px; 
+    font-weight: 600; 
+    margin: 40px 0 15px 0; 
+    color: #84609e;
+}
+
+.contact li:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    background: url("images/map_icon.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    top: 3px;
+    position: relative;
+}
+
+.contact li:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    background: url("images/email_icon.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    top: 3px;
+    position: relative;
+}
+
+.contact li:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    background: url("images/phone_icon.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    top: 3px;
+    position: relative;
+}
+
+.contact li:nth-child(4)::before {
+    content: "";
+    display: inline-block;
+    background: url("images/instagram_icon.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    top: 4px;
+    position: relative;
+}
+
+.contact li:nth-child(5)::before {
+    content: "";
+    display: inline-block;
+    background: url("images/linkedin_icon.png") no-repeat;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    top: 4px;
+    position: relative;
+}
+
+section {
+    padding: 40px 25%; 
+    box-shadow: 0 3px 15px rgba(0, 0, 0,0.15);
+    border-bottom: 4px dashed #acacd3;
+}
+
+section.about-me {
+    background-color: #f7ecee; 
+    overflow: auto; 
+}
+
+img.me {
+    max-width: 220px; 
+    border-radius: 50% 0% 40% 3%; 
+    float:right; 
+    padding: 10px 0 20px 20px; 
+}
+
+/* NOW */
+
+.photo {margin-top: 40px;}
+
+.photo img:nth-child(1),
+.photo img:nth-child(2) {
+    width: 19%;
+    height: auto;
+    border-radius: 0% 50% 0% 40%;
+}
+
+.photo img:nth-child(3) {
+    width: 19%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.photo img:nth-child(4),
+.photo img:nth-child(5) {
+    width: 19%;
+    height: auto;
+    border-radius: 40% 0% 50% 0%;
+}
+
+section.other {
+display:flex;}
+
+section.other div { padding: 0 25px;}
+
+.other ul {padding-left: 0;}
+
+footer {
+    text-align:center;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    overflow:auto;
+    background-color: #acacd3;
+}
