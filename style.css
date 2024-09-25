@@ -201,7 +201,7 @@ section.other div { padding: 0 25px;}
 
 footer {
     text-align:center;
-    padding: 20px;
+    padding: 20px 0;
     display: block;
     width: 100%;
     overflow:auto;
