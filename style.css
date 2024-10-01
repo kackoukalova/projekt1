@@ -1,18 +1,20 @@
-*/* {
+html {
     box-sizing: border-box;
-}*/
-
-body {margin: 0 0;
-line-height: 1.5;
-font-size: 18px;
-font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
 }
 
-body ul li {list-style-type: none; padding-left:0;}
+body {margin: 0;
+line-height: 1.4;
+font-size: 15px;
+font-family: "Barlow", sans-serif;
+    font-weight: 400;
+}
 
-.clear {clear:both;}
+li {list-style-type: none; padding-left:0;}
 
 a, a.link, a.visited {color:#84609e; font-weight: 600;}
 
@@ -21,7 +23,7 @@ font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-    font-size: 40px;
+    font-size: 2.2em;
     margin-bottom: 20px;
 }
 
@@ -30,7 +32,7 @@ h2,
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-    font-size: 30px;
+    font-size: 1.8em;
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: #a8c5b6;
@@ -38,19 +40,19 @@ h2,
 
 h3 {
     font-weight:600;
-    font-size: 20px;
+    font-size: 1.15em;
+    margin-bottom: 0;
 }
 
-p.date {
-    color: #a5a5a5; 
-    margin-top: -17px;
+.date {
+    margin-top:0;
+    color: #a5a5a5;
 }
 
-p {margin: 8px 0 17px 0;}
+
 
 button {
-    font-size: 18px;
-    padding: 10px 10px;
+    padding: 12px;
     background-color: #fda146;
     border-radius: 5px;
     border: none;
@@ -60,94 +62,64 @@ button a {
     color: white; 
     text-decoration: none; 
     font-weight: 600; 
-    padding: 10px 10px;
-}
-
-button a:hover {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
     
 }
+
 button:hover {background-color: #db9147;}
 
 /*  HLAVIČKA */
 
 header {
     text-align: center;
-    padding-top: 150px;
-    height: 350px;
+    padding-top: 100px;
+    height: 400px;
     background-image: url("images/cover.jpg");
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
 }
 
-header ul li {
+.contact li {
     display: inline; 
     padding: 15px 20px;
 }
 
 .contact {
-    font-size: 20px; 
+    font-size: 1.1em;
     font-weight: 600; 
     margin: 40px 0 15px 0; 
     color: #84609e;
 }
 
-.contact li:nth-child(1)::before {
+.contact li:nth-child(n)::before {
     content: "";
     display: inline-block;
-    background: url("images/map_icon.png") no-repeat;
     height: 24px;
     width: 24px;
     margin-right: 5px;
     top: 3px;
     position: relative;
+}
+
+
+.contact li:nth-child(1)::before {
+    background: url("images/map_icon.png") no-repeat;
 }
 
 .contact li:nth-child(2)::before {
-    content: "";
-    display: inline-block;
     background: url("images/email_icon.png") no-repeat;
-    height: 24px;
-    width: 24px;
-    margin-right: 5px;
-    top: 3px;
-    position: relative;
 }
 
 .contact li:nth-child(3)::before {
-    content: "";
-    display: inline-block;
     background: url("images/phone_icon.png") no-repeat;
-    height: 24px;
-    width: 24px;
-    margin-right: 5px;
-    top: 3px;
-    position: relative;
 }
 
 .contact li:nth-child(4)::before {
-    content: "";
-    display: inline-block;
     background: url("images/instagram_icon.png") no-repeat;
-    height: 24px;
-    width: 24px;
-    margin-right: 5px;
-    top: 4px;
-    position: relative;
 }
 
 .contact li:nth-child(5)::before {
-    content: "";
-    display: inline-block;
     background: url("images/linkedin_icon.png") no-repeat;
-    height: 24px;
-    width: 24px;
-    margin-right: 5px;
-    top: 4px;
-    position: relative;
 }
 
 section {
@@ -162,7 +134,7 @@ section.about-me {
 }
 
 img.me {
-    max-width: 220px; 
+    max-width: 200px; 
     border-radius: 50% 0% 40% 3%; 
     float:right; 
     padding: 10px 0 20px 20px; 
@@ -172,27 +144,24 @@ img.me {
 
 .photo {margin-top: 40px;}
 
+.photo img:nth-child(n){
+    width: 19%;
+}
 .photo img:nth-child(1),
 .photo img:nth-child(2) {
-    width: 19%;
-    height: auto;
     border-radius: 0% 50% 0% 40%;
 }
 
 .photo img:nth-child(3) {
-    width: 19%;
-    height: auto;
     border-radius: 50%;
 }
 
 .photo img:nth-child(4),
 .photo img:nth-child(5) {
-    width: 19%;
-    height: auto;
     border-radius: 40% 0% 50% 0%;
 }
 
-section.other {
+.other {
 display:flex;}
 
 section.other div { padding: 0 25px;}
@@ -202,8 +171,5 @@ section.other div { padding: 0 25px;}
 footer {
     text-align:center;
     padding: 20px 0;
-    display: block;
-    width: 100%;
-    overflow:auto;
     background-color: #acacd3;
 }
